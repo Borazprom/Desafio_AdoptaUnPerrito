@@ -11,6 +11,7 @@ import Titulo from './components/Header'
 
 function App() {
 // Este es el desafio sin los bedgs
+//modificando el nombre de la carpeta
   return (
     <>
       <Titulo title="Adopta un perrito"/>
