@@ -1,15 +1,17 @@
 import Card from "react-bootstrap/Card";
-import Boton from "./Boton";
-const MyCard = ({image, name, text, colorButton, textButton}) => {
+import Raza from "./Tags";
+
+
+const MyCard = ({image, name, text, colorBadge, textBadge}) => {
     return (
         <>
-        <Card style={{width: "18rem"}}>
-            <Card.Img variant="top" src={image}/>
+        <Card className="card">
+            <Card.Img variant="top" src={image} className="img"/>
 
             <Card.Body>
-                <Card.Title>{name}</Card.Title>
-                <Card.Text>{text}</Card.Text>
-                <Boton colorButton={colorButton} textButton={textButton} />
+                <Card.Title className="name">{name}</Card.Title>
+                <Card.Text className="text">{text}</Card.Text>
+                <Raza colorBadge={colorBadge} textBadge={textBadge}/>
             </Card.Body>
         </Card>
 
